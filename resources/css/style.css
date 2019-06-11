@@ -245,11 +245,8 @@ strong {
   display: flex;
   text-align: center;
   justify-content: center;
-  background-image: url(../images/date-night.PNG);
   height: fit-content;
-  background-position-x: center;
   padding: 0 auto;
-  background-size: cover;
 }
 
 .ribbon,
@@ -293,6 +290,18 @@ strong {
   background-image: url(../images/jumpstart.PNG);
   background-size: cover;
   background-position-y: -0.9rem;
+}
+
+.pack-3 {
+  background-image: url(../images/warby.PNG);
+  background-size: cover;
+  background-position-x: center;
+}
+
+.pack-4 {
+  background-image: url(../images/date-night.PNG);
+  background-position-x: center;
+  background-size: cover;
 }
 
 .pack-5 {

@@ -15,6 +15,7 @@ strong {
 .row {
   justify-content: space-evenly;
   padding: 2rem 0;
+  margin: 0;
 }
 
 .navbar {
@@ -297,6 +298,10 @@ strong {
   justify-content: space-between;
   padding: 1rem;
 }
+
+.goal {
+  text-align: center;
+}
 /*.date-night-game {
   background-image: url(../images/date-night.PNG);
 }*/
@@ -313,6 +318,8 @@ strong {
   .resume-paper {
     width: auto;
   }
+
+
 }
 
 @media (max-width: 430px) { 

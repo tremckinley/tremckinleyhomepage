@@ -349,7 +349,12 @@ strong {
   .resume-paper {
     width: auto;
   }
-
+  .ribbon {
+    font-size: large;
+  }
+  .ribbon-icons {
+    font-size: medium;
+  }
 
 }
 
@@ -409,6 +414,9 @@ strong {
     padding: 2rem;
   }
 
+  .row {
+    padding: 0;
+  }
 }
 
 /*.sliders > button {

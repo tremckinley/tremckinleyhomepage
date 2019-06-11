@@ -284,10 +284,22 @@ strong {
   width: -webkit-fill-available;
 }
 
+.pack-1 {
+  background-image: url(../images/jammming.PNG);
+  background-size: cover;
+}
+
 .pack-2 {
   background-image: url(../images/jumpstart.PNG);
   background-size: cover;
+  background-position-y: -0.9rem;
 }
+
+.pack-5 {
+  background-image: url(../images/match-game.PNG);
+  background-size: cover;
+}
+
 
 .code-connect {
   flex-direction: column;

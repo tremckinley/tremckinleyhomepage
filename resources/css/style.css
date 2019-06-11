@@ -261,6 +261,7 @@ strong {
   font-size: -webkit-xxx-large;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 7px;
+  margin: 1rem 0;
 }
 
 .ribbon-icons {
@@ -277,6 +278,15 @@ strong {
   bottom: 29.5rem;
   background-color: #c4c4c4;
   display: none;
+}
+
+.pack {
+  width: -webkit-fill-available;
+}
+
+.pack-2 {
+  background-image: url(../images/jumpstart.PNG);
+  background-size: cover;
 }
 
 .code-connect {

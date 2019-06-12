@@ -19,7 +19,7 @@ strong {
 
 .pushdown {
   position: relative;
-  top: 5.5rem;
+  top: 5.3rem;
 }
 
 .bordered {
@@ -47,27 +47,52 @@ strong {
 
 .nav-item:hover {
   font-weight: bold;
+  color: whitesmoke;
   cursor: pointer;
+}
+
+.btn-success {
+  background-color: rgba(40, 167, 69);
+  border: solid 1px whitesmoke;
+}
+
+.btn-success:hover {
+  background-color: whitesmoke;
+  color: rgba(40, 167, 69);
 }
 
 .jumbotron {
   background-image: url(../images/suit.jpg);
   background-size: cover;
+  border-radius: 0px;
   height: -webkit-fill-available;
   display: flex;
   padding: 0 10rem;
   margin-bottom: 0;
 }
 
+.headline {
+  font-size: 4rem;
+}
+
 .headline-container {
   display: flex;
+  flex-direction: column;
+  color: whitesmoke;
   justify-content: space-evenly;
-  align-items: center;
+  padding-left: 2rem;
+  background-color: rgba(100, 100, 100, 0.37);
+  text-shadow: 1px 1px 4px black;
+
 }
 .headshot {
   border-radius: 75px;
   height: auto;
   box-shadow: 2px 0.4rem 2px silver;
+}
+
+.sliders {
+  margin: 2rem 0 0 0;
 }
 
 .s-box {
@@ -80,7 +105,6 @@ strong {
 .slick-list {
   height: 40rem;
   position: relative;
-  top: 2.5rem;
 }
 
 .slick-dots,
@@ -276,7 +300,7 @@ h1.web-dev-head {
   justify-content: center;
   height: fit-content;
   padding: 0 auto;
-  border: solid 3px  rgba(40, 167, 69)
+  border: solid 3px rgba(40, 167, 69);
 }
 
 .ribbon,
@@ -413,6 +437,8 @@ h1.web-dev-head {
     text-align: center;
     padding-top: 1rem;
     margin: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   #professional {

@@ -1,6 +1,11 @@
-html {
+body {
   font-size: 15px;
   width: auto;
+  background-color: #c6ac86 
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 a:hover {
@@ -10,6 +15,15 @@ a:hover {
 strong {
   display: block;
   text-align: center;
+}
+
+.pushdown {
+  position: relative;
+  top: 5.5rem;
+}
+
+.bordered {
+  border: solid 1px #FFFFFF 
 }
 
 .row {
@@ -23,9 +37,9 @@ strong {
   width: -webkit-fill-available;
   z-index: 5;
   justify-content: flex-end;
-  background-color: lightblue;
+  background-color: #c6ac86;
   height: 5rem;
-  box-shadow: 2px 0.4rem 2px silver;
+  box-shadow: 2px 4px 2px whitesmoke;
 }
 .navbar-nav {
   display: inline;
@@ -37,9 +51,9 @@ strong {
 }
 
 .jumbotron {
-  position: relative;
-  top: 2.5rem;
-  height: 30rem;
+  background-image: url(../images/suit.jpg);
+  background-size: cover;
+  height: -webkit-fill-available;
   display: flex;
   padding: 0 10rem;
   margin-bottom: 0;
@@ -128,16 +142,17 @@ strong {
   width: 286px;
   height: max-content;
   margin-bottom: 1rem;
-  background: #C4C4C4;
+  background: rgba(40, 167, 69, 0.6);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 7px;
+  border: solid 1px whitesmoke;
   text-align: center;
+  transition: background-color 300ms;
 }
 
 
 
 .experience:hover{
-  background: #aaaaaa;
+  background-color: ghostwhite;
 }
 
 #where,
@@ -146,11 +161,16 @@ strong {
   text-align: center;
 }
 
+h1.web-dev-head {
+  text-shadow: 1px 1px 4px black;
+
+}
+
 .resume-paper {
   width: 30rem;
   height: 35rem;
 
-  background: #FFFFFF;
+  background: ghostwhite;
   border: 1px solid #000000;
   box-sizing: border-box;
   box-shadow: 9px 11px 4px rgba(0, 0, 0, 0.25);
@@ -182,9 +202,10 @@ strong {
 }
 
 .container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   height: auto;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -195,18 +216,25 @@ strong {
 }
 
 .portf-container {
-  background-color: #4900A6;
-  box-shadow: 0px -30px 60px blueviolet;
+  background-color:  rgba(40, 167, 69, 0.23);
+  box-shadow: 0px 0px 80px  rgba(40, 167, 69, 0.6);
 }
 
 .portf-container-end {
   background-color: #4900A6;
 }
 
-.lang-dots-container {
-  background-image: url(../images/1.jpg);
+.project-head-container {
+  height: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../images/code-2620118_1920.jpg);
   background-size: cover;
-  background-position-y: -16rem;
+}
+
+.lang-dots-container {
+
   padding: 3rem 5rem;
   display: inline-flex;
   justify-content: space-evenly;
@@ -238,8 +266,9 @@ strong {
 }
 
 .project-table {
-  background: radial-gradient(449.00px at 50% 50%, #1F63CA 0%, rgba(89, 140, 216, 0.741667) 17.5%, rgba(117, 159, 222, 0.616667) 38.33%, rgba(172, 197, 235, 0.371875) 62.81%, rgba(255, 255, 255, 0) 100%), rgba(41, 40, 40, 0.63);
-}
+  /*background: radial-gradient(449.00px at 50% 50%, #1F63CA 0%, rgba(89, 140, 216, 0.741667) 17.5%, rgba(117, 159, 222, 0.616667) 38.33%, rgba(172, 197, 235, 0.371875) 62.81%, rgba(255, 255, 255, 0) 100%), rgba(41, 40, 40, 0.63);*/
+  margin: auto;
+} 
 
 .package {
   display: flex;
@@ -247,6 +276,7 @@ strong {
   justify-content: center;
   height: fit-content;
   padding: 0 auto;
+  border: solid 3px  rgba(40, 167, 69)
 }
 
 .ribbon,
@@ -255,7 +285,7 @@ strong {
   background: #c4c4c4d4;
   padding: 2rem 1rem;
   color: black;
-  font-size: -webkit-xxx-large;
+  font-size: 2rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 7px;
   margin: 1rem 0;
@@ -324,15 +354,18 @@ strong {
   color: blue;
 }
 
+.goal {
+  text-align: center;
+}
+
 .footer {
+  background-color: #c6ac86;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
 }
 
-.goal {
-  text-align: center;
-}
+
 /*.date-night-game {
   background-image: url(../images/date-night.PNG);
 }*/
@@ -399,9 +432,11 @@ strong {
     font-size: .8rem;
   }
 
-  #web-dev {
+  #web-dev,
+  #resume-items {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   .cpu {

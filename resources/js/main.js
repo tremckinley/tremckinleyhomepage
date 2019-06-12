@@ -2,8 +2,8 @@ $(document).ready(function(){
 
   //Banner Carousel
   $('.sliders').slick({
-    autoplay: false,
-    autoplaySpeed: 6000,
+    autoplay: true,
+    autoplaySpeed: 5000,
     centerMode: true,
     centerPadding: 'auto',
     slidesToShow: 1,

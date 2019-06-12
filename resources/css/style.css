@@ -8,6 +8,8 @@ h1 {
   font-size: 3rem;
 }
 
+
+
 a:hover {
   text-decoration: none;
 }
@@ -83,6 +85,7 @@ strong {
   padding-left: 2rem;
   background-color: rgba(100, 100, 100, 0.37);
   text-shadow: 1px 1px 4px black;
+  -webkit-text-stroke: 0.5pt black;
 
 }
 .headshot {
@@ -133,27 +136,51 @@ strong {
 
 }
 
-
-.interests > section > h2 {
+.quotes > section {
   color: #FFFFFF;
-  font-size: 20rem;
   position: relative;
-  bottom: 60rem;
+  bottom: 35rem;
+  text-shadow: 1px 1px 12px black;
+  background-color: #b3c3b047;
+  -webkit-text-stroke: 1pt black;
+}
+
+.quotes > section > h4 {
+  font-size: 5rem;
 
 }
 
-.interests > section > h3 {
-  color: #FFFFFF;
+.quotes > section > p {
   font-size: 4rem;
-  position: relative;
-  bottom: 61rem;
   text-align: -webkit-center;
 }
 
-.interests > img {
+.causes > img,
+.quotes > img {
   width: 100%;
-  opacity: 0.7;
+  position: relative;
+  bottom: 12rem;
 }
+
+#qutoeby {
+  font-style: italic;
+  -webkit-text-stroke: white;
+  padding-left: 10rem;
+}
+
+.causes > section > h3{
+  position: relative;
+  bottom: 50rem;
+  font-size: 3.5rem;
+}
+
+.causes > section > ul {
+  position: relative;
+  bottom: 50rem;
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+}
+
 
 #professional {
  /* background: rgba(20, 151, 18, 0.83);*/

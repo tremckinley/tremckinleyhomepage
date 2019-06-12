@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   //Banner Carousel
   $('.sliders').slick({
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 6000,
     centerMode: true,
     centerPadding: 'auto',

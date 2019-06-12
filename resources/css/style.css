@@ -4,7 +4,8 @@ body {
   background-color: #c6ac86 
 }
 
-h1 {
+h1,
+.whatami {
   font-size: 3rem;
 }
 
@@ -136,18 +137,26 @@ strong {
 
 }
 
+.quotes {
+  background-image: url(../images/arwinggreen.jpg);
+  background-size: cover;
+  height: -webkit-fill-available;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+
 .quotes > section {
   color: #FFFFFF;
-  position: relative;
-  bottom: 35rem;
+  margin-top: 19.1rem;
   text-shadow: 1px 1px 12px black;
   background-color: #b3c3b047;
   -webkit-text-stroke: 1pt black;
 }
 
-.quotes > section > h4 {
-  font-size: 5rem;
 
+.quotes > section > h4,
+.bio > section > h3 {
+  font-size: 5rem;
 }
 
 .quotes > section > p {
@@ -155,11 +164,15 @@ strong {
   text-align: -webkit-center;
 }
 
-.causes > img,
-.quotes > img {
-  width: 100%;
-  position: relative;
-  bottom: 12rem;
+.causes {
+  height: -webkit-fill-available;
+  padding-top: 2rem;
+  background-image: url(../images/avatar-2191918__340.png);
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center
 }
 
 #qutoeby {
@@ -168,15 +181,43 @@ strong {
   padding-left: 10rem;
 }
 
-.causes > section > h3{
+.bio > section {
+  position: relative;
+  bottom: 43rem;
+  margin-left: 4.1rem;
+  padding: 1.5rem 3rem 1.5rem 2rem;
+  /*padding-left: 45.5rem;
+  padding-right: 3rem;*/
+  background-color: rgba(40, 167, 69, 0.6)
+}
+
+.bio > div > img {
+  width: 60%;
+  z-index: 1.5;
+}
+
+/*.bio > section > h3 {
   position: relative;
   bottom: 50rem;
   font-size: 3.5rem;
 }
 
-.causes > section > ul {
+.bio > section > ul {
   position: relative;
   bottom: 50rem;
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+}*/
+
+.causes > section > h3 {
+  /*position: relative;
+  bottom: 50rem;*/
+  font-size: 3.5rem;
+}
+
+.causes > section > ul {
+  /*position: relative;
+  bottom: 50rem;*/
   font-size: 1.5rem;
   letter-spacing: 10px;
 }

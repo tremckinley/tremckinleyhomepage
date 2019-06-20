@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+  console.log(`Hello, world! Glad you're here. If you're reading this it's probably because you are interested in finding out it this site is built well. \n This page and my skills are always a work in progress so feel free to share any input! Let's connect! -Tremaine`);
+
+  console.log(`Consideration: JavaScript code could be more modular, but for this one static page, I decided not to do the refactoring and extra importing/exporting. :)`)
+
   //Banner Carousel
   $('.sliders').slick({
     autoplay: true,
@@ -57,6 +61,7 @@ $(document).ready(function(){
    } else {return};
   }
 
+  //Function that fills Resume Paper
   const toggleResume = function (job) {
     if (job === 'ipAE') {
       togglePaper();
@@ -112,6 +117,7 @@ $(document).ready(function(){
     }
   };
 
+  //Event Handlers for Resume Changes
 $('#ipAE').click(function() {
   toggleResume('ipAE');
 });
@@ -125,13 +131,13 @@ $('#awards').click(function() {
   toggleResume('awards')
 });
 
-
+// Expands descriptions on hover (Jobs and Projects)
 $('.ribbon').hover(function() {
   $(this).children('section').slideToggle(300)
 
  });
 
-
+// Code for Header Behavior
   var lastScrollTop = 0;
   $(window).scroll(function(){
     var scrollTop = $(this).scrollTop();
@@ -145,6 +151,5 @@ $('.ribbon').hover(function() {
       
     }
   });
-
   
 });
